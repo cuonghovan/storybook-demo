@@ -29,7 +29,6 @@ const StyledActionButton = styled(Button)<AnimationProps>(({ open }) => ({
     textTransform: 'none',
     fontSize: '0.8rem',
     lineHeight: '1.5rem',
-    
     display: open ? 'none' : 'inline-flex',
     opacity: open ? 0 : 1,
     transitionProperty: 'display, opacity',

@@ -62,7 +62,7 @@ const ShoppingCartItem = (props: ShoppingCartItemProps) => {
         <Box>
             <StyledMainContentBox>
                 <StyledItemText><StyledItemIcon />{text}</StyledItemText>
-                <StyledPrice>{price}</StyledPrice>
+                {price && <StyledPrice>{price}</StyledPrice>}
             </StyledMainContentBox>
             {description && <StyledDescription>{description}</StyledDescription>}
             {tag && <StyledTag>{tag}</StyledTag>}
