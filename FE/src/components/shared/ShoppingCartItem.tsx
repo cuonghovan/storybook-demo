@@ -56,7 +56,7 @@ const StyledItemIcon = styled(AddShoppingCartIcon)(({ theme }) => ({
     fontSize: '1.5rem',
 }));
 
-export const ShoppingCartItem = (props: ShoppingCartItemProps) => {
+const ShoppingCartItem = (props: ShoppingCartItemProps) => {
     const { text, price, description, tag } = props;
     return (
         <Box>
@@ -69,3 +69,5 @@ export const ShoppingCartItem = (props: ShoppingCartItemProps) => {
         </Box>
     );
 }
+
+export default ShoppingCartItem;

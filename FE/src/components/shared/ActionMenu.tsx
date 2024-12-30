@@ -29,6 +29,7 @@ const StyledActionButton = styled(Button)<AnimationProps>(({ open }) => ({
     textTransform: 'none',
     fontSize: '0.8rem',
     lineHeight: '1.5rem',
+    
     display: open ? 'none' : 'inline-flex',
     opacity: open ? 0 : 1,
     transitionProperty: 'display, opacity',
@@ -99,7 +100,7 @@ const StyledContainer = styled(Box)(() => ({
     position: 'relative'
 }));
 
-export const ActionMenu = (props: ActionMenuProps) => {
+const ActionMenu = (props: ActionMenuProps) => {
     const [open, setOpen] = useState<boolean>(false);
     const { actionButtonText, actionButtonIcon, items, originVertical = 'bottom' } = props;
 
@@ -140,3 +141,5 @@ export const ActionMenu = (props: ActionMenuProps) => {
         </StyledContainer>
     );
 }
+
+export default ActionMenu;
