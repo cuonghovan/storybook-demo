@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2019", // Target a modern JavaScript version
+    "module": "CommonJS", // Use CommonJS for Node.js compatibility
+    "strict": true, // Enable strict mode
+    "esModuleInterop": true, // Allow default imports from CommonJS modules
+    "skipLibCheck": true, // Skip type checking for libraries
+    "moduleResolution": "Node", // Use Node.js module resolution
+    "outDir": "./dist", // Output directory for compiled files
+    "resolveJsonModule": true, // Allow importing JSON files
+    "types": ["jest", "node"]
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts"], // Include your source and test files
+  "exclude": ["node_modules"] // Exclude node_modules
+} 
