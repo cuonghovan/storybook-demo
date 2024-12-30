@@ -27,7 +27,7 @@ export const Default: Story = {
     originVertical:"bottom",
   },
   render: (args) => (
-    <Box sx={{ position: 'absolute', bottom: '400px', right: '30px' }}>
+    <Box sx={{ position: 'fixed', bottom: '400px', right: '30px' }}>
         <ActionMenu {...args}/>
     </Box>
   ),
